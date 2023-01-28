@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300;1,600;1,700&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 body {
@@ -13,6 +13,7 @@ body {
   align-items: center;
   min-height: 100vh;
 }
+/*contenedor hoja*/
 .container {
   position: relative;
   width: 100%;
@@ -24,13 +25,14 @@ body {
   grid-template-columns: 1fr 2fr;
   box-shadow: 5px 10px 5px rgba(100, 95, 95, 0.999);
 }
+
+/*lado izquierdo del Cv */
 .container .contenedor-izq {
   position: relative;
   background: #313338;
   padding: 40px;
   width: 370px;
 }
-
 .perfil {
   position: relative;
   display: flex;
@@ -39,9 +41,16 @@ body {
   padding-bottom: 20px;
   border-bottom: 1px solid rgb(58, 54, 54);
 }
-.perfil h2{
-    padding-bottom: 5px;
-    border-bottom: solid thin rgb(212, 212, 212);
+.perfil h2 {
+  padding-bottom: 5px;
+  border-bottom: solid thin rgb(212, 212, 212);
+  color: #fff;
+  font-size: 1.5em;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.4em;
 }
 .perfil .imgPerfil {
   position: relative;
@@ -58,15 +67,7 @@ body {
   object-fit: cover;
   object-position: 50% 50%;
 }
-.perfil h2 {
-  color: #fff;
-  font-size: 1.5em;
-  margin-top: 20px;
-  text-transform: uppercase;
-  text-align: center;
-  font-weight: 600;
-  line-height: 1.4em;
-}
+
 .perfil h2 span {
   font-size: 0.8em;
   font-style: 300;
@@ -82,15 +83,15 @@ body {
   margin-bottom: 20px;
 }
 
-.contentedorInfo{
-    font-size: 17px;
-    font-weight: 700;
+.contentedorInfo {
+  font-size: 17px;
+  font-weight: 700;
 }
-.contentedorInfo img{
-    width: 25px;
-    height: 25px;
-    vertical-align: middle;
-    margin: 10px 0;
+.contentedorInfo img {
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+  margin: 10px 0;
 }
 .contentedorInfo ul li {
   position: relative;
@@ -98,6 +99,7 @@ body {
   margin: 10px 0;
   cursor: pointer;
 }
+/* Iconos */
 .material-symbols-outlined {
   width: 30px;
   height: 30px;
@@ -152,7 +154,7 @@ body {
   justify-content: flex-start;
   list-style: none;
   color: white;
-  font-weight: 600;
+  font-weight: 700;
   margin: 10px 0;
   cursor: pointer;
   vertical-align: middle;
@@ -166,13 +168,15 @@ body {
   background: #fff;
   padding: 40px;
 }
-.contenedorDer hr{
- margin-bottom: 10px;
+
+/*lado derecho del Cv */
+.contenedorDer hr {
+  margin-bottom: 10px;
 }
-.about {
+.informacion {
   margin-bottom: 50px;
 }
-.about:last-child {
+.informacion:last-child {
   margin-bottom: 0;
 }
 .title2 {
@@ -184,62 +188,62 @@ body {
 p {
   color: black;
 }
-.about {
+.informacion {
   font-size: 17px;
 }
-.about p {
+.informacion p {
   text-align: justify;
 }
-.about .caja2 {
+.informacion .caja2 {
   display: flex;
   flex-direction: row;
   margin: 40px 0;
 }
-.about .caja2 .cajaInfo {
+.informacion.caja2 .cajaInfo {
   min-width: 120px;
 }
-.about .caja2 .cajaInfo h5 {
+.informacion.caja2 .cajaInfo h5 {
   text-transform: uppercase;
   color: #848c90;
-  font-weight: 600;
+  font-weight: 700;
   margin-top: 3px;
 }
-.about .caja2 .text h4 {
+.informacion.caja2 .text h4 {
   text-transform: uppercase;
   color: rgb(148, 8, 8);
   font-size: 16px;
 }
 
-.about.educacion li {
+.informacion.educacion li {
   margin-bottom: 15px;
   flex-direction: column;
   list-style: none;
 }
-.about.educacion h5 {
+.informacion.educacion h5 {
   color: rgb(4, 4, 4);
-  font-weight: 500;
+  font-weight: 700;
 }
-.about.educacion h4 {
+.informacion.educacion h4 {
   color: rgb(0, 0, 0);
-  font-weight: 500;
+  font-weight: 700;
 }
-.about.educacion h4:nth-child(2) {
+.informacion.educacion h4:nth-child(2) {
   color: rgb(148, 8, 8);
-  font-weight: 300;
+  font-weight: 600;
 }
-.about.idiomas{
-    margin-top: 100px;
+.informacion.referencias {
+  margin-top: 100px;
 }
-.about.idiomas ul li {
+.informacion.referencias ul li {
   list-style: none;
   margin: 10px 0;
 }
-.about.idiomas .text {
+.informacion.referencias .text {
   display: flex;
   flex-direction: column;
   margin: 20px 0;
   letter-spacing: 2px;
   font-size: 16px;
   color: black;
+  font-weight: 600;
 }
- 
